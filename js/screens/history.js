@@ -1,8 +1,8 @@
 // История тренировок: список, открыть и «поделиться».
 
-import { finishedSessions, sessionStats } from '../logic/analytics.js?v=10';
-import { formatDuration } from '../timer.js?v=10';
-import { esc } from '../util.js?v=10';
+import { finishedSessions, sessionStats } from '../logic/analytics.js?v=11';
+import { formatDuration } from '../timer.js?v=11';
+import { esc } from '../util.js?v=11';
 
 export const historyScreen = {
   mount(el, props) {
