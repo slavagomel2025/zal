@@ -1,6 +1,6 @@
 // Подтверждение рекомендаций агента: что изменится.
 
-import { esc } from '../util.js?v=10';
+import { esc } from '../util.js?v=11';
 
 function formatTarget(target) {
   return `${target.weightKg} кг × ${target.reps} · ${target.sets} подх. · отдых ${target.restSec} с`;
