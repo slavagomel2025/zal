@@ -1,6 +1,6 @@
 // Настройки: звук, RIR, экспорт, импорт, очистка.
 
-import { esc, parseNumber } from '../util.js?v=10';
+import { esc, parseNumber } from '../util.js?v=11';
 
 export const settingsScreen = {
   mount(el, props) {
