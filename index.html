@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Зал">
+  <meta name="theme-color" content="#0a0a0c">
+  <title>Зал</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-180.png">
+  <link rel="icon" type="image/png" href="./icons/icon-192.png">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/screens.css">
+  <style>
+    #boot-error {
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      top: 12px;
+      z-index: 999;
+      background: #2a1114;
+      border: 1px solid #ff6259;
+      color: #ffd9d6;
+      padding: 12px 14px;
+      border-radius: 12px;
+      font: 13px/1.45 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      white-space: pre-wrap;
+      max-height: 70vh;
+      overflow: auto;
+      -webkit-user-select: text;
+      user-select: text;
+    }
+  </style>
+  <script>
+    // Показываем ошибку прямо на экране: иначе при сбое виден только тёмный фон.
+    (function () {
+      function show(text) {
+        var old = document.getElementById('boot-error');
+        if (old) {
+          old.textContent += '\n' + text;
+          return;
+        }
+        var box = document.createElement('div');
+        box.id = 'boot-error';
+        box.textContent = text;
+        document.body.appendChild(box);
+      }
+      window.__showBootError = show;
+      window.addEventListener('error', function (event) {
+        var file = (event.filename || '').split('/').pop();
+        show('Ошибка: ' + (event.message || 'неизвестно') + (file ? ' (' + file + ':' + event.lineno + ')' : ''));
+      });
+      window.addEventListener('unhandledrejection', function (event) {
+        var reason = event.reason;
+        show('Ошибка (promise): ' + (reason && reason.message ? reason.message : String(reason)));
+      });
+    })();
+  </script>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="./js/app.js?v=10"
+          onerror="window.__showBootError && window.__showBootError('Не загрузился app.js — обнови страницу или проверь, что сервер запущен')"></script>
+</body>
+</html>
