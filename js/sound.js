@@ -15,7 +15,8 @@ const SPECS = {
 };
 
 // Голос «Готовимся» записан заранее (app/audio/ready.wav).
-const READY_URL = new URL('../audio/ready.wav', import.meta.url).href;
+// Метка в адресе нужна, чтобы CDN не отдавал старый кэш.
+const READY_URL = new URL('../audio/ready.wav?clip=1', import.meta.url).href;
 
 let mode = 'mix';
 let ctx = null;
