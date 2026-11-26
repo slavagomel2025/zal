@@ -1,8 +1,8 @@
 // Анализ: метрики с тумблерами, недели, рекорды, прогресс.
 
-import { buildAnalysis, sessionStats } from '../logic/analytics.js?v=10';
-import { formatDuration } from '../timer.js?v=10';
-import { esc } from '../util.js?v=10';
+import { buildAnalysis, sessionStats } from '../logic/analytics.js?v=11';
+import { formatDuration } from '../timer.js?v=11';
+import { esc } from '../util.js?v=11';
 
 const METRICS = [
   ['tonnage', 'Тоннаж'],
