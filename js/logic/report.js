@@ -1,7 +1,7 @@
 // Отчёт по одной тренировке: для агента и для «поделиться».
 
-import { sessionStats } from './analytics.js?v=10';
-import { formatDuration } from '../timer.js?v=10';
+import { sessionStats } from './analytics.js?v=11';
+import { formatDuration } from '../timer.js?v=11';
 
 export const REPORT_VERSION = 1;
 
