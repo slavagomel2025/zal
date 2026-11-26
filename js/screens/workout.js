@@ -1,7 +1,7 @@
 // Экран тренировки: старт (какой день и план) и ввод подхода.
 
-import { formatDuration } from '../timer.js?v=10';
-import { esc, parseNumber, BUILD } from '../util.js?v=10';
+import { formatDuration } from '../timer.js?v=11';
+import { esc, parseNumber, BUILD } from '../util.js?v=11';
 
 let cleanup = null;
 
