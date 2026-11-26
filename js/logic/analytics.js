@@ -1,6 +1,6 @@
 // Аналитика: считаем всё из сохранённых тренировок, ничего не дублируем.
 
-import { baseLoad } from '../state.js?v=10';
+import { baseLoad } from '../state.js?v=11';
 
 export function e1rm(weightKg, reps) {
   if (!weightKg || !reps) return 0;
