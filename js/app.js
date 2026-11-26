@@ -1,6 +1,6 @@
 // Точка входа: маршрутизация между экранами и сценарии.
 
-import { initRouter, show } from './router.js?v=10';
+import { initRouter, show } from './router.js?v=11';
 import {
   state,
   newSession,
@@ -8,7 +8,7 @@ import {
   logSet,
   skipItem,
   finishSession
-} from './state.js?v=10';
+} from './state.js?v=11';
 import {
   loadData,
   saveData,
@@ -20,19 +20,19 @@ import {
   saveRecommendations,
   saveBackupSlot,
   remove
-} from './storage.js?v=10';
-import { startScreen, setScreen } from './screens/workout.js?v=10';
-import { restScreen } from './screens/rest.js?v=10';
-import { summaryScreen } from './screens/summary.js?v=10';
-import { historyScreen } from './screens/history.js?v=10';
-import { reportScreen } from './screens/report.js?v=10';
-import { buildSessionReport, reportText, reportFileName } from './logic/report.js?v=10';
-import { programsScreen } from './screens/programs.js?v=10';
-import { libraryScreen } from './screens/exercises.js?v=10';
-import { analysisScreen } from './screens/analysis.js?v=10';
-import { settingsScreen } from './screens/settings.js?v=10';
-import { importScreen } from './screens/import.js?v=10';
-import { resolveTargets } from './logic/progression.js?v=10';
+} from './storage.js?v=11';
+import { startScreen, setScreen } from './screens/workout.js?v=11';
+import { restScreen } from './screens/rest.js?v=11';
+import { summaryScreen } from './screens/summary.js?v=11';
+import { historyScreen } from './screens/history.js?v=11';
+import { reportScreen } from './screens/report.js?v=11';
+import { buildSessionReport, reportText, reportFileName } from './logic/report.js?v=11';
+import { programsScreen } from './screens/programs.js?v=11';
+import { libraryScreen } from './screens/exercises.js?v=11';
+import { analysisScreen } from './screens/analysis.js?v=11';
+import { settingsScreen } from './screens/settings.js?v=11';
+import { importScreen } from './screens/import.js?v=11';
+import { resolveTargets } from './logic/progression.js?v=11';
 import {
   buildExport,
   parseBackup,
@@ -40,8 +40,8 @@ import {
   previewRecommendations,
   applyRecommendations,
   exportFileName
-} from './logic/exportImport.js?v=10';
-import { unlockAudio, setSoundMode, beep30, sayReady } from './sound.js?v=10';
+} from './logic/exportImport.js?v=11';
+import { unlockAudio, setSoundMode, beep30, sayReady } from './sound.js?v=11';
 
 const root = document.getElementById('app');
 let periodDays = 28;
