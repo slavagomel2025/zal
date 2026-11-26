@@ -1,6 +1,6 @@
 // Мелкие утилиты без зависимостей.
 
-export const BUILD = 10;
+export const BUILD = 11;
 
 export function esc(value) {
   return String(value ?? '').replace(/[&<>"]/g, (c) => (
