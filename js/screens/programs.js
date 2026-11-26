@@ -1,6 +1,6 @@
 // Программы на разные дни: список дней, состав дня, выбор упражнений.
 
-import { esc } from '../util.js?v=10';
+import { esc } from '../util.js?v=11';
 
 function groupLabel(group) {
   return group == null ? '' : 'блок';
