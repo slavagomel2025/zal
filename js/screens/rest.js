@@ -1,9 +1,9 @@
 // Экран отдыха: крупный отсчёт, крупное название следующего упражнения.
 
-import { RestTimer, formatMMSS } from '../timer.js?v=10';
-import { beep30, beepTick, beepEnd, sayReady } from '../sound.js?v=10';
-import { keepAwake, releaseAwake } from '../wakelock.js?v=10';
-import { esc } from '../util.js?v=10';
+import { RestTimer, formatMMSS } from '../timer.js?v=11';
+import { beep30, beepTick, beepEnd, sayReady } from '../sound.js?v=11';
+import { keepAwake, releaseAwake } from '../wakelock.js?v=11';
+import { esc } from '../util.js?v=11';
 
 // Короткий отдых: «готовимся» за 30 секунд до конца звучало бы почти сразу
 // после начала, поэтому для него оставляем только пики.
