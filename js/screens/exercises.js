@@ -1,6 +1,6 @@
 // Библиотека упражнений: список и редактор.
 
-import { esc, parseNumber } from '../util.js?v=10';
+import { esc, parseNumber } from '../util.js?v=11';
 
 const GROUPS = ['', 'грудь', 'спина', 'ноги', 'плечи', 'руки', 'пресс'];
 
