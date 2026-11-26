@@ -1,8 +1,8 @@
 // Итоги тренировки: цифры и правка подходов.
 
-import { formatDuration } from '../timer.js?v=10';
-import { computeSummary, updateSet } from '../state.js?v=10';
-import { esc, parseNumber } from '../util.js?v=10';
+import { formatDuration } from '../timer.js?v=11';
+import { computeSummary, updateSet } from '../state.js?v=11';
+import { esc, parseNumber } from '../util.js?v=11';
 
 function restText(sec) {
   if (!sec) return '—';
